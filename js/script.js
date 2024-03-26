@@ -5,7 +5,7 @@ console.log(document.title);
 const newDiv = document.createElement('div');
 newDiv.className = "cakediv";
 
-// Create new paragraph element for fruits
+// Create new paragraph element for Cakes
 const newParagraph1 = document.createElement('h2');
 newParagraph1.className = "newparadiv1";
 newParagraph1.textContent = 'cakes:';
@@ -14,18 +14,18 @@ newParagraph1.style.textDecoration = "underline";
 // Select parent element
 const parentDiv = document.querySelector('div');
 
-// Append new paragraph for fruits to parent element
+// Append new paragraph for Cakes to parent element
 parentDiv.after(newParagraph1);
 
-// Create unordered list for fruits
+// Create unordered list for Cakes
 const cakeul = document.createElement('ul');
 cakeul.className = "cakesul";
 cakeul.style.backgroundColor = "Blue";
 
-// Append unordered list for fruits to parent element
+// Append unordered list for Cakes to parent element
 parentDiv.after(cakeul);
 
-// Create list items for fruits and append to unordered list
+// Create list items for Cakes and append to unordered list
 const cakes = ['Vanilla', 'Strawberry', 'Chocolate', 'Red Velvet'];
 cakes.forEach(cakes => {
     const cakesli = document.createElement('li');
@@ -34,39 +34,39 @@ cakes.forEach(cakes => {
     cakeul.appendChild(cakesli);
 });
 
-// Style fruit list items
+// Style Cakes list items
 document.querySelectorAll('.cakesli').forEach(cakesli => {
     cakesli.style.color = "orange";
 });
 
-// Create new paragraph element for flowers
+// Create new paragraph element for Treats
 const newParagraph2 = document.createElement('h2');
 newParagraph2.className = "newparadiv2";
 newParagraph2.textContent = 'Treats:';
 newParagraph2.style.textDecoration = "underline";
 
-// Append new paragraph for flowers after fruit unordered list
+// Append new paragraph for Treats after Cakes unordered list
 cakeul.after(newParagraph2);
 
-// Create unordered list for flowers
+// Create unordered list for Treats
 const treatul = document.createElement('ul');
 treatul.className = "treatul";
 treatul.style.backgroundColor = "Yellow";
 
-// Append unordered list for flowers after fruit unordered list
+// Append unordered list for Treats after Cakes unordered list
 treatul.after(treatul);
 
-// Create list items for flowers and append to unordered list
+// Create list items for Treats and append to unordered list
 const treats = ['Cake Pops', 'Pretzels', 'Strawberry Shooters'];
 treats.forEach(treats => {
-    const treatli = document.createElement('li');
-    treatli.className = "treatli";
-    treatli.innerHTML = treats;
-    treatli.appendChild(treatli);
+    const treatsli = document.createElement('li');
+    treatsli.className = "treatsli";
+    treatsli.innerHTML = treats;
+    treatsli.appendChild(treatsli);
 });
 
-// Style flower list items
-document.querySelectorAll('.treatli').forEach(treatli => {
+// Style Treats list items
+document.querySelectorAll('.treatsli').forEach(treatli => {
     treatli.style.color = "green";
 });
 
@@ -77,11 +77,11 @@ window.addEventListener("click", function (event) {
     console.log('Clicked at coordinates: (x=' + x1 + ', y=' + y1 + ')');
 });
 
-// Update first fruit name
-document.querySelector('.treatli').textContent = "Pineapple";
+// Update first Treats name
+document.querySelector('.treatsli').textContent = "Pineapple";
 
 // Add form sections after flower unordered list
-const treatdiv = document.querySelector('.treatul');
+const treatdiv = document.querySelector('.treatsul');
 let section1 = document.createElement('section');
 section1.id = "target1";
 let section2 = document.createElement('section');
@@ -161,7 +161,7 @@ const formSubmitHandler = (event) => {
         messages.push('Username is required');
     } else if (passf.length < 8) {
         messages.push('Password should be at least 8 characters long');
-    } else if (namef === 'jaya' && passf === 'password') {
+    } else if (namef === 'Baliee' && passf === 'password') {
         errorelement.style.backgroundColor = "green";
         messages.push('User validated');
     } else {
@@ -194,7 +194,7 @@ document.querySelectorAll('.treatli').forEach((el) => {
     });
 });
 
-// Handle flower buy button click
+// Handle Cake buy button click
 document.querySelectorAll('.treatli').forEach((el) => {
     const button = document.createElement('button');
     button.textContent = 'BUY';
