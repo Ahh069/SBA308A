@@ -1,0 +1,39 @@
+
+body{
+    margin-top:20px;
+    color: #1a202c;
+    text-align: left;
+    background-color: #a2bde0;
+}
+.main-body {
+    padding: 15px;
+}
+
+section{
+    background-color: #724646;
+    padding: 5px;
+    margin: 3px 0;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border: chartreuse;
+}
+input {
+    /* Your styles here /
+    width: 200px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/ Targeting input with specific type /
+input[type="text"] {
+    / Your styles here /
+    background-color: #f9f9f9;
+}
+
+/ Targeting input with specific class /
+.custom-input {
+    / Your styles here */
+    color: blue;
+}
