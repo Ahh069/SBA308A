@@ -59,7 +59,7 @@ treatul.after(treatul);
 // Create list items for flowers and append to unordered list
 const treats = ['Cake Pops', 'Pretzels', 'Strawberry Shooters'];
 treats.forEach(treats => {
-    const flowerli = document.createElement('li');
+    const treatli = document.createElement('li');
     treatli.className = "treatli";
     treatli.innerHTML = treats;
     treatli.appendChild(treatli);
