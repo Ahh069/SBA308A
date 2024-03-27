@@ -10,7 +10,7 @@ document
         let requestBody = { data: inputVal };
         console.log(requestBody);
 
-        const response = await fetch('https://jsonplaceholder.typicode.com/todos', {
+        const response = await fetch('https://api.thedogapi.com/v1/images/search?limit=9&x-api-key=live_fEyaF5CcS1CK9eduBzKqxtkNjeYcbCYn3E3nF5Q8RiZn0KYRRMlFa8AbL4a333Lm', {
             method: 'POST',
             body: JSON.stringify(requestBody),
             headers: {
