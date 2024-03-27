@@ -4,7 +4,7 @@
 <head>
     <title>Dog Page</title>
     <link rel="stylesheet" href="styles/style.css">
-    <script defer src="./js/script.js"></script>
+ 
     <style>
         .adv {
             color: black;
@@ -20,24 +20,36 @@
         Input:
         <input type="text" id="myInput"/>
     </label>
+    <button id="myBtn" type="button">submit</button>
+
+<img id="dog" src="" height="250" style="cursor: pointer" />
     <img id="dog" src="" height="250" style="cursor: pointer" />
-    <img src="https://images.dog.ceo/breeds/terrier-scottish/n02097298_8974.jpg"/>
+    <img src="https://cdn2.thedogapi.com/images/iIgf9U3bv.jpg"/>
 
     <p id="demo"></p>
+    <selectonchange="showBreedImage(value)"
+        name="breed_selector" id= "breed_selector">
+    </select>
+    <div>
+        <a id="wiki_link" target="blank"></a>
+        <div id="breed_json"></div>
+        <div>
+        <img id="breed_image"></img>    
+    </div>
+    </div>
 
     <div class="adv">
         <h2>Dog Lovers</h2>
-        <p>Come and enjoy beautiful Dogs around the world</p>
+        <p>Come and enjoy beautiful dogs around the world</p>
         <p>Email: Dogsarekind@gmail.com</p>
       </div>
     <script type="text/html">
     <div class="adv">
         <script type="text/html">
             <div class="adv">
-              <h3> Bear Farm</h3>
+              <h3> Dogs</h3>
               <p> </p>
             </div>
             <div id="gallery"></div>
-
-
+            <script defer src="./js/script.js"></script>
 </body>
