@@ -46,3 +46,33 @@ console.log("in scripts");
     }
 
     getNewDog();
+
+    const gallery = document.getElementById('gallery');
+    const breedInput = document.getElementById('breedInput');
+    const searchButton = document.getElementById('searchButton');
+
+    searchButton.addEventListener("click", searchByBreed);
+
+    async function searchByBreed() {
+        const breed = breedInput.value.trim().toLowerCase();
+        if (breed === '') {
+            alert('Please enter a breed');
+            return;
+        }
+
+        const url = `https://dog.ceo/api/breed/images/random/10`;
+        try {
+            const response = await fetch(url);
+            const { message } = await response.json();
+            if (response.ok) {
+                displayImages(message);
+            } else {
+                alert('Breed not found');
+            }
+        } catch (error) {
+            console.error('Error fetching data:', error);
+            alert('Error fetching data. Please try again later.');
+        }
+    }
+
+    
